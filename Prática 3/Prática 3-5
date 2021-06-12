@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+  printf("Escreva o valor de um ano");
+  int ano;
+  scanf("%d",&ano);
+  if(ano%100==0)
+  printf("Esse ano não é bissexto");
+  else if(ano%4==0 )
+  printf("Ano bissexto");
+  else if(ano%400==0 && ano%100<=0)
+  printf("Esse ano também é bissexto");
+  else if(ano%4>=0||ano%4<=0||ano%400>=0||ano%400<=0)
+  printf("Esse ano não é bissexto");
+  return 0;
+}

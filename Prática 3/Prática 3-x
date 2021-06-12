@@ -1,0 +1,28 @@
+#include <stdio.h>
+#define MAX 50
+#include<math.h>
+
+int main(void) {
+int num;
+    int bin[7];
+    int gex;
+
+    printf("Digite um número para ser convertido: ");
+    scanf("%d", &num);
+
+    for (gex = 7; gex >= 0; gex--) {
+        if (num % 2 == 0) {
+           bin[gex] = 0;
+          num = num / 2;
+        }
+        else {
+           bin[gex] = 1;
+           num = num / 2;
+        }
+    }
+
+    for (gex = 0; gex <= 7; gex++) {
+        printf("%d", bin[gex]);
+    }
+
+}

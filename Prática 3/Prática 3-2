@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+  printf("Insira um valor bruto com duas casas decimais no máximo, por favor");
+  float desconto=0.00;
+  float valorbruto;
+  scanf("%f",&valorbruto);
+  if(valorbruto<=100)
+  desconto=0.01;
+  else if(valorbruto>=100.01 && valorbruto<=500)
+  desconto=0.05;
+  else if(valorbruto>=500)
+  desconto=0.1;
+  float precofinal=valorbruto-valorbruto*desconto;
+  printf("%f\n",precofinal);
+  return 0;
+}

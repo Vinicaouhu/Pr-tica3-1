@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+int main(void) {
+  int numfat;
+  int n;
+  printf("Valor que se queira descobrir o fatorial: ");
+  scanf("%d",&n);
+  for(numfat=1;n>1;n=n-1)
+  numfat=numfat*n;
+  printf("Fatorial calculado: %d",numfat);
+  return 0;
+}

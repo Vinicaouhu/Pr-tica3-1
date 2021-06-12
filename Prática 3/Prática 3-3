@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+  printf("Insira um valor para que se obtenha seu valor qualitativo fictício");
+  int nota;
+  scanf("%d",&nota);
+  int qualitativo=nota/2;
+  printf("%d\n",qualitativo);
+  if (qualitativo==1)
+  printf("Ruim");
+  else if(qualitativo==2)
+  printf("Insuficiente");
+  else if(qualitativo==3)
+  printf("Suficiente");
+  else if(qualitativo==4)
+  printf("Bom");
+  else if(qualitativo==5 && nota%2==0)
+  printf("Ótimo");
+  else if(nota>=10)
+  printf("Nota inválida");
+  return 0;
+}
